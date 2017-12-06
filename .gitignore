@@ -1,0 +1,10 @@
+target
+*.log.*
+logs
+/.project
+*.settings
+*.project
+*.classpath
+*.sql
+*.iml
+sql/*

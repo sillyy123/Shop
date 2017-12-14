@@ -50,7 +50,7 @@ public class ProductDaoImpl extends BaseDaoImpl<Product> implements ProductDao {
 
     private List<Product> Query(Integer csid, Integer page, String hql) {
 
-        int rows = 12;
+        int rows = 4;
         Query query = this.getCurrentSession().createQuery(hql);
         query.setParameter(0, csid);
         List list = query.setFirstResult((page - 1) * rows).setMaxResults(rows).list();

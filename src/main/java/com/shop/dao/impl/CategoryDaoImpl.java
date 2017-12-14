@@ -18,7 +18,7 @@ public class CategoryDaoImpl extends BaseDaoImpl<Category> implements CategoryDa
     }
 
     public List<Category> findAll() {
-        String hql = "from Category";
+        String hql = "from Category c where c.id != 1000";
         return find(hql);
     }
 

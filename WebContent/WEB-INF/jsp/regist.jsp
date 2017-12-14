@@ -169,9 +169,7 @@
 
 	<div class="container footer">
 
-		<%--<div class="span24">
-        <div class="copyright">Copyright © 2016-2016  版权所有</div>
-    </div>--%>
+		
 	</div>
 	<div id="_my97DP"
 		style="position: absolute; top: -1970px; left: -1970px;"></div>

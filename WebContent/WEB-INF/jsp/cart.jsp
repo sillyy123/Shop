@@ -104,9 +104,7 @@
                             <td>￥<fmt:formatNumber type="number" minFractionDigits="1"
                                                    value="${cartItem.product.shop_price }" maxFractionDigits="1"/>
                             </td>
-                            <%--<td class="quantity" width="60"><c:out value="${cartItem.count}" /></td>--%>
-                            <%--<td width="140"><span class="subtotal">￥<c:out--%>
-                            <%--value="${cartItem.product.shop_price*cartItem.count}" /></span></td>--%>
+                            
                         </c:if>
 
                         <c:if test="${currentTime ==  privilegeTime}">
@@ -114,13 +112,10 @@
                                                    value="${cartItem.product.shop_price * cartItem.product.categorySecond.category.discount }"
                                                    maxFractionDigits="1"/>
                             </td>
-                            <%--<td class="quantity" width="60"><c:out value="${cartItem.count}" /></td>--%>
-                            <%--<td width="140"><span class="subtotal">￥<c:out--%>
-                            <%--value="${cartItem.product.shop_price*cartItem.product.categorySecond.category.discount*cartItem.count}" /></span></td>--%>
+                            
                         </c:if>
 
-                            <%--<td>￥<fmt:formatNumber type="number" minFractionDigits="1" value="${cartItem.product.shop_price*cartItem.product.categorySecond.category.discount }" maxFractionDigits="1"/>--%>
-                            <%--</td>--%>
+                           
 
                         <td class="quantity" width="60"><c:out value="${cartItem.count}"/></td>
                         <td width="140"><span class="subtotal">￥<c:out
@@ -154,20 +149,7 @@
 
                     <c:if test="${currentTime ==  privilegeTime}">
 
-                        <%-- 判断购买商品是否满足优惠条件 --%>
-                        <%--<c:if test="${cartItem.product.shop_price*cartItem.product.categorySecond.category.discount*count >= ticket.consume}">
-                            <em> 满${ticket.consume}减${ticket.privilege} </em>
-
-                        </c:if>
-
-                        <c:if test="${cartItem.product.shop_price*cartItem.product.categorySecond.category.discount*count < ticket.consume}">
-                            <em> 暂无可用优惠券 </em>
-
-                        </c:if>--%>
-
-                        <%--<c:out value="总金额：${sessionScope.cart.total}" />
-                        <c:out value="满${ticket.consume}减${ticket.privilege}" />--%>
-
+                        
                         <c:if test="${sessionScope.cart.total >= ticket.consume}">
                             <%--<em> 满${ticket.consume}减${ticket.privilege} </em>--%>
                             <em><input id="checkbox" type="checkbox" value="privilege">满<c:out
@@ -221,9 +203,7 @@
 
 <div class="container footer">
 
-    <%--<div class="span24">
-            <div class="copyright">Copyright © 2016-2016 版权所有</div>
-    </div>--%>
+  
 </div>
 </body>
 </html>

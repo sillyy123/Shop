@@ -88,13 +88,7 @@ public class CheckImgController {
         return null;
     }
 
-    /**
-     * 取其某一范围的color
-     *
-     * @param fc int 范围参数1
-     * @param bc int 范围参数2
-     * @return Color
-     */
+    
     private Color getRandColor(int fc, int bc) {
 
         // 取其随机颜色

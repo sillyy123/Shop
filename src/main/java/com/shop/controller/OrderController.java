@@ -102,10 +102,7 @@ public class OrderController {
         return "order";
     }
 
-    /* 确认订单的操作,为订单付款:
-     * addr:收货人地址 name:收货人 phone:联系电话  oid:订单的oid
-     * pd_FrpId:接收支付通道编码
-     */
+    
     @RequestMapping(value = "/payOrder")
     public String payOrder(Integer oid, String addr, String name, String phone, String total, HttpSession session,
                            Map<String, Object> map) {
@@ -160,10 +157,7 @@ public class OrderController {
         return "orderList";
     }
 
-    /*
-     * 付款成功后跳转回来的路径:
-     * r6_Order,r3_Amt 接收付款成功后的参数:
-     */
+  
     @RequestMapping(value = "/callBack")
     public String callBack(Integer r6_Order, Integer r3_Amt, Map<String, Object> map) {
         // 修改订单的状态:

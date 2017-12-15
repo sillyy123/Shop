@@ -4,12 +4,7 @@ import com.shop.model.Category;
 
 import java.util.List;
 
-/**
- * @author Joryun
- * @ClassName: AdminCategoryService
- * @Description: 商品类别服务
- * @date 2016年11月29日 下午7:43:30
- */
+
 public interface AdminCategoryService {
 
     // 分页查询一级分类
